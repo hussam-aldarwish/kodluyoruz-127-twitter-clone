@@ -1,0 +1,22 @@
+@import '../../App.scss','../leftPane/LeftPane.scss';
+
+.tweetButton{
+    @media only screen and (max-width: 600px){
+        img{
+            display: block;
+            margin: auto;
+        }
+    }
+    font: $font;
+    cursor:pointer;
+    width: 225px;
+    height: 50px;
+    border-radius: 35px;
+    border: none;
+    background: $color2;
+    color: $fontColor;
+    transition: $transitionNormal;
+    &:hover{
+        background: rgb(23 136 213);
+    }
+}

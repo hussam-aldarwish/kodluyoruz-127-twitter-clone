@@ -1,0 +1,252 @@
+@import "../../App.scss";
+
+a{
+  text-decoration: none;
+  color: $backgroundLight;
+}
+.leftPane {
+  position: sticky;
+  top: 0;
+  width: 275px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  justify-content: space-between;
+  border-right: 0.1mm solid $borderColor;
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0 15px;
+    width: auto;
+
+    .twitterLogo {
+      margin-left: 5px;
+      margin-bottom: 20px;
+      height: 35px;
+      width: 35px;
+    }
+    .activeClass{
+      li{
+        font-weight: bold;
+      }
+    }
+    li {
+      max-width: max-content;
+      display: flex;
+      height: 40px;
+      align-items: center;
+      font-size: 1.4rem;
+      border-radius: 50px;
+      padding: 10px;
+      cursor: pointer;
+      transition: $transitionNormal;
+      svg {
+        width: 25px;
+        height: auto;
+        margin-right: 10px;
+        transition: $transitionNormal;
+      }
+      img {
+        width: 25px;
+        height: auto;
+        margin-right: 10px;
+        transition: $transitionNormal;
+      }
+    }
+    li:hover {
+      font-weight: bold;
+      background: $hoverColor;
+    }
+    ol{
+      display: flex;
+    }
+  }
+  header {
+    svg {
+      margin-left: 50px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+.leftPane {
+  @media only screen and (max-width: 1260px) {
+    width: auto;
+    li {
+      height: 25px !important;
+      img,
+      svg {
+        margin-right: 0 !important;
+      }
+    }
+    button {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    border-right: none;
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      svg {
+        margin: 5px 15px;
+      }
+      left: 0;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      bottom: 0;
+      margin: 0;
+      padding: 5px 15px;
+      justify-content: space-around;
+      background: $backgroundDark;
+      border-top: 0.1mm solid $borderColor;
+      left: 0;
+
+      li {
+        height: 25px;
+        img {
+          margin-right: 0 !important;
+        }
+        svg,
+        img {
+          margin: 0;
+          width: 25px;
+        }
+      }
+      button {
+        position: fixed;
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        bottom: 75px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+.active {
+  font-weight: bold;
+  background: rgba(217, 217, 217, 0.1);
+}
+.menu{
+  background: $backgroundDark;
+  border-radius: 15px;
+  border:1px solid;
+  padding: 15px 0;
+  position: absolute;
+  top: 30px;
+  transition: 0.5s;
+  ol{
+    padding: 0;
+  }
+}
+.activemenu{
+  transition: 0.3s;
+  display: none;
+}
+.activemenuMobile{
+  transition: 0.3s;
+  display: none;
+}
+
+.menuMobile{
+  position: fixed;
+  bottom: 60PX;
+  right: 75PX;
+  width: 125px;
+  height: auto;
+  border-radius: 5PX;
+  background: $backgroundDark;
+  transition: 0.3s;
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 ;
+    h4{
+      text-align: center;
+          padding: 0;
+          margin: 10px 5px;
+        }
+    li{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 5px;
+      &:hover{
+        background: $hoverColor;
+      }
+      svg{
+        width: 24px;
+        height: 24px;
+        margin: 0 10px;
+      }
+      
+    }
+    ol{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        margin-top:10px;
+        li{
+          padding: 5px !important;
+          padding: 0;
+          border-radius: 35px;
+          &:hover{
+            background: $hoverColor;
+          }
+        }
+      }
+  }
+}
+html[theme="light"]{
+  .leftPane{
+    ul{
+      background: $backgroundLight;
+      
+      svg{
+      color: $colorBLue;
+    }
+    li{
+      &:hover {
+        font-weight: bold;
+        background: $hoverColorligt;
+      }
+      img{
+        filter: invert(1);
+      }
+      svg{
+        color: $backgroundDark;
+      }
+    }
+    }
+    .menu{
+      background: #e3e3e3 !important;
+      *{
+        background: #e3e3e3 !important;
+      }
+    }
+    
+  }
+ .menuMobile{
+      background: #e3e3e3 !important;
+      *{
+        background: #e3e3e3 !important;
+
+      }
+    }
+a{
+  color: $backgroundDark;
+} 
+}

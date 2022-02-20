@@ -1,0 +1,105 @@
+@import "../../App.scss";
+.profile{
+    min-width: 600px;
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+    
+}
+.profile-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border: 0 solid var(--twitter-background);
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: black;
+    a{
+        button{
+            background: none;
+            border: none;
+            color: rgb(233, 73, 73);
+            svg{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+.username > h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+.icon-div{
+    margin-left: 2px;
+    margin-right: 20px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+}
+.icon:hover{
+    background-color: #6E767D;
+}
+.username{
+    margin-right: auto;
+}
+.username > span {
+    color: #6E767D;
+}
+html{
+    overflow-x: hidden;
+    &:-webkit-scrollbar {
+      width: 0;
+    }
+}
+@media only screen and (max-width: 1260px) {
+
+}
+@media only screen and (max-width: 600px) {
+    .profile{
+        min-width: 100%;
+        height: auto;
+    }
+    .user-img{
+        button{
+            left: 70% !important;
+            width: 100px !important;
+        }
+    }
+}
+html[theme="light"]{
+    .profile-header{
+        background: $backgroundLight;
+        .icon-div{
+            svg{
+                color: $fontColorlight !important;
+            }
+        }
+        .username{
+            h3{
+                color: $fontColorlight !important;
+            }
+        }
+    }
+    .user-details{
+        h3{
+            color: $fontColorlight !important;
+        }
+    }
+    .user-img{
+        button{
+            background: $backgroundLight;
+            color: $fontColorlight;
+        }
+    }
+    .friend button{
+        background: $backgroundDark;
+        color: $fontColor;
+    }
+}

@@ -1,0 +1,91 @@
+@import "../../App.scss";
+.Rightpane{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 0 0 0 15px;
+    border-left: 0.1mm solid rgba(217, 217, 217, 0.2);
+    .hashContainer{
+        position: sticky;
+        top: 15px;
+        display: flex;
+        flex-direction: column;
+        background: $background2;
+        min-width: 350px;
+        max-height: 480px;
+        min-height: auto;
+        width: auto;
+        border-radius: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        h3{
+            padding: 15px;
+        }
+        ul{
+            padding: 0;
+            .followList{
+                flex-direction: row;
+            }
+            li{
+                display: flex;
+                flex-direction: column;
+                margin-bottom:15px ;
+                padding: 5px 15px 5px 15px;
+                cursor: pointer;
+                &:hover{
+                    background: rgba(253, 253, 253, 0.041);
+                }
+                svg{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    padding: 8px;
+                    margin-right: 10px; 
+                    background: black;
+                }
+                p{
+                    margin: 0;
+                    color: rgba(252, 252, 252, 0.404);
+                    font-weight: lighter;
+                }
+                h4{
+                
+                    margin: 0;
+                }
+                list-style: none;
+            }
+        }
+        h3{
+            margin: 0;
+            font-weight: bold;
+        }
+    }
+    .whoToFollow{
+        position: sticky;
+        top: 360px;
+        max-height: 350px;
+    }
+    @media only screen and (max-width:1200px){
+        .hashContainer{
+            min-width: 290px;
+        }
+    }
+}
+html[theme="light"]{
+  .hashContainer{
+      background: $borderColorlight;
+      p{
+          color: rgb(83, 100, 113) !important;
+      }
+      .followList{
+          svg{
+              color: $backgroundLight;
+          }
+      }
+  }
+  
+  .Rightpane .hashContainer ul li:hover {
+        background: $hoverColorligt;
+      }
+  
+}

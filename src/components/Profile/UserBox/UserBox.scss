@@ -1,0 +1,74 @@
+@import "../../../App.scss";
+.user-box {
+   border-bottom: 1px solid #6E767D;
+}
+.user-img{
+   display: flex;
+   flex-direction: column;
+   height: 190px; 
+}
+.profile-background{
+    cursor: pointer
+}
+.profileAvatar{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 60px;
+    left: 15px;
+    cursor: pointer;
+    border: 5px solid black;
+}
+.user-img button{
+  position: relative;
+  bottom: 122px; 
+  left: 75%;
+  width: 20%;
+  min-height: 35px;
+  border-radius: 30px;
+  border: 1px solid $borderColor;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 3px;
+    margin-left: 16px;
+    h3{
+        margin: 100px 0 0 0;
+    }
+}
+.follow{
+    display: inline;
+    margin-top: 10px;
+}
+.follow span:hover{
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+.follow span{
+    color: #6E767D;
+}
+.user-details>span{
+   margin-top: 10px;
+   color: #6E767D;
+}
+.detail-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-bottom: 1px;
+    margin-top: 20px;
+}
+.detail-bottom p{
+    color: #6E767D; 
+}
+

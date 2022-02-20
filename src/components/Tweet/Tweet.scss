@@ -1,0 +1,58 @@
+@import "../../App.scss";
+.tweet{
+    flex: 0.4;
+    border-right: 1px solid $borderColor;
+    overflow-y: scroll;
+    max-width: 600px;
+    min-width: 600px;
+    margin-top:80px ;
+    margin-bottom:55px ;
+}
+.tweet::-webkit-scrollbar {
+    display: none;
+  }
+.tweet-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;background: #000;
+    min-width:600px;
+    border-bottom: 0.1mm solid $borderColor;
+    padding: 15px 0;
+    cursor: pointer;
+    color: white;
+}
+.tweet-header{
+svg{
+    margin-right:20px ;
+}
+h2{
+    margin: 0 20px;
+    font-weight: bold;
+}
+}
+@media only screen and (max-width:600px){
+    .tweet{
+        min-width: 100%;
+        .tweet-header{
+         min-width:100% !important;
+         right: 0;
+        }
+    }
+}
+html[theme="light"]{
+    input{
+        background: $backgroundLight;
+        color: $backgroundDark;
+    }
+  .tweet-header{
+      background: $backgroundLight;
+      color: $backgroundDark;
+  }
+  .post{
+      p,h1,h3,h5{
+          color: #000;
+      }
+  }
+}

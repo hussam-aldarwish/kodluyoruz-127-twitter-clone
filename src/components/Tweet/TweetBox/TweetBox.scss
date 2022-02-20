@@ -1,0 +1,64 @@
+@import "../../../App.scss";
+.tweet-box {
+  padding-bottom: 10px;
+  border-bottom: 0.1mm solid $borderColor;
+  padding-right: 10px;
+}
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-between;
+}
+.tweet-box > form {
+  display: flex;
+  flex-direction: column;
+  button {
+    background: $color2;
+    color: $fontColor;
+    transition: $transitionNormal;
+    border: none;
+    border-radius: 35px;
+    width: 75px;
+    height: 36px;
+    font-weight: bolder;
+  }
+}
+.tweet-box-input {
+  padding: 20px;
+  display: flex;
+  input {
+    flex: 1;
+    width: 100%;
+    background: $backgroundDark;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+}
+.tweet-box-icon {
+  display: flex;
+  cursor: pointer;
+  color: $colorBLue;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  max-width: -webkit-fill-available;
+  height: 30px;
+  background: $colorBLue;
+  color: $fontColor;
+  cursor: pointer;
+  &:disabled {
+      background-color: #6c757d;
+      border-color: #6c757d;
+      cursor: default;
+  }
+}

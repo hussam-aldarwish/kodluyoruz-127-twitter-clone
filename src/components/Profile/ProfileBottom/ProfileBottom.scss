@@ -1,0 +1,64 @@
+@import "../../../App.scss";
+.profile-bottom{
+    display: flex;
+    flex-direction: column;
+}
+.first{
+    border-bottom: 0.01mm solid $borderColor;
+}
+.first > h3{
+   text-align: start;
+   margin-left: 16px;
+   color: white;
+}
+.friends{
+    display: flex;
+    flex-direction: column;
+}
+.friend{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    cursor: pointer;
+    margin-bottom: 10px;
+    height: 60px;
+    border-bottom: 0.01mm solid $borderColor;
+}
+
+.friend div{
+    display: flex;
+    flex-direction: row;
+}
+.friend div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.name{
+    margin-left: 5px;
+    flex-direction: column !important;
+}
+.name span{
+    font-weight: 550;
+    color: white;
+}
+.name span:hover{
+    text-decoration: underline;
+}
+.name p{
+    color: #6E767D;
+}
+.friend button{
+    height: 30px;
+    width: 100px;
+    border: 1px solid #6E767D;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-weight: 550;
+    cursor: pointer;
+    margin-right: 25px !important;
+}

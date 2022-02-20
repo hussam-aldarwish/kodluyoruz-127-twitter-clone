@@ -1,0 +1,49 @@
+@import "../../App.scss";
+
+.input-container {
+    margin-bottom: 10px;
+    width: 100%;
+    input {
+        height: 35px;
+        border-radius: 35px;
+        padding: 0 15px;
+        background-color: #ebebeb;
+        border: 2px solid #393939;
+        &::placeholder {
+            color: #bbbbbb;
+        }
+        .error {
+            border: 1px solid orangered;
+        }
+        &:not([type="submit"]) {
+            width: 100%;
+            &:focus {
+                outline: none;
+                background-color: #ebebeb;
+            }
+            [theme="dark"] & {
+                background-color: #7a7a7a;
+                color: white;
+            }
+            [theme="dark"] &:focus {
+                background-color: #939393;
+            }
+        }
+        &[type="submit"] {
+            max-width: -webkit-fill-available;
+            height: 30px;
+            background: $colorBLue;
+            color: $fontColor;
+            cursor: pointer;
+            &:disabled {
+                background-color: #6c757d;
+                border-color: #6c757d;
+                cursor: default;
+            }
+        }
+    }
+    .error {
+        color: orangered;
+        font-size: 12px;
+    }
+}
