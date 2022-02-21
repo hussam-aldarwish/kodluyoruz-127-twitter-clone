@@ -1,6 +1,6 @@
 # Twitter Clone App
 
-#### Demonstration link: [**Twitter Clone - Kodluyoruz**](https://twitter-clone-kodluyoruz.netlify.app)
+#### Demonstration link: [**Twitter Clone - Kodluyoruz**](https://twitter-clone-kodluyoruz.vercel.app)
 
 
 
