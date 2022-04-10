@@ -5,7 +5,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^12.1.4",
+    "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^14.0.4",
     "connected-react-router": "^6.9.2",
     "firebase": "^9.6.10",
