@@ -11,7 +11,7 @@
     "firebase": "^9.6.10",
     "history": "4.10.1",
     "i18next": "^21.6.16",
-    "i18next-browser-languagedetector": "^6.1.4",
+    "i18next-browser-languagedetector": "^7.0.0",
     "icons": "^1.0.0",
     "jsx": "^0.9.89",
     "moment": "^2.29.2",
