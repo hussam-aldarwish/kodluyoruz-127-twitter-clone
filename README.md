@@ -27,7 +27,7 @@
 
 ### Contributors:
 * [**HUSSAM ALDADRWISH**](https://github.com/hussam-aldarwish)  
-* [**Abdullah Ahmad**](https://github.com/abdulahhamad)  
+* [**Abdullah Hamitoglu**](https://github.com/abdullahHamitoglu)  
 * [**Uzuk Bakyyeva**](https://github.com/bakyyeva)  
 
 
